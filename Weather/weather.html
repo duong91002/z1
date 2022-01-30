@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+    <script src="https://kit.fontawesome.com/d3efa8ea96.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div id="weather">
+        <input type="search" name="" id="search" placeholder="Nhập tên thành phố các quốc gia">
+        <input type="button" value="Tìm Kiếm" id="nut" onclick="timkiem();">
+        <div class="content">
+           <h1>
+        <span class="city"></span>
+        <span>,</span>
+        <span class="country"></span>
+        <div class="today"></div>
+    </h1>
+       </div>
+       <div class="tprt">
+           <span class="nhietdo"></span>
+           <span><sup>o</sup></span>
+           <span>C</span>
+       </div>
+       <div class="trangthai">
+       </div>
+       <div class="chitiet">
+           <div class="eye" style="flex: 1;"><i class="far fa-eye"></i><div><span class="chitiet_s"></span><span>(m)</span></div></div>
+           <div class="wind" style="flex: 1;"><i class="fas fa-wind"></i><div><span class="chitiet_v"></span><span>(m/s)</span></div></div>
+           <div class="sun" style="flex: 1;"><i class="fas fa-cloud-sun"></i><div><span class="chitiet_sun"></span>(%)</div></div>
+       </div>
+    </div>
+</body>
+</html>
